@@ -25,8 +25,23 @@
 
 .sidebar.active ~ .main-content {
   left: 250px;
-  width: calc(100% - 250%);
+  width: calc(100% - 250px);
 }
 .sidebar.active {
   width: 250px;
+}
+
+.sidebar #btn {
+  position: absolute;
+  color: #fff;
+  top: 0.4rem;
+  left: 50%;
+  font-size: 1.2rem;
+  line-height: 50px;
+  transform: translate(-50%);
+  cursor: pointer;
+}
+
+.sidebar.active #btn {
+  left: 90%;
 }
